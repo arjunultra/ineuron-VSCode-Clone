@@ -547,6 +547,11 @@ video {
   }
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mr-3 {
   margin-right: 0.75rem;
 }
@@ -599,12 +604,30 @@ video {
   height: 64px;
 }
 
-.h-\[\] {
-  height: ;
+.h-screen {
+  height: 100vh;
 }
 
-.h-full {
-  height: 100%;
+.min-h-fit {
+  min-height: -moz-fit-content;
+  min-height: fit-content;
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.min-h-min {
+  min-height: -moz-min-content;
+  min-height: min-content;
+}
+
+.min-h-\[50\%\] {
+  min-height: 50%;
+}
+
+.min-h-\[50vh\] {
+  min-height: 50vh;
 }
 
 .w-screen {
@@ -619,13 +642,8 @@ video {
   width: 3rem;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.min-w-fit {
-  min-width: -moz-fit-content;
-  min-width: fit-content;
+.max-w-2xl {
+  max-width: 42rem;
 }
 
 .flex-col {
@@ -659,24 +677,29 @@ video {
   background-color: rgb(0 102 184 / var(--tw-bg-opacity));
 }
 
+.bg-red-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.bg-hero-pattern {
+  background-image: url('../assets/screenshot.png');
+}
+
+.bg-\[url\(\'\.\.\/assets\/screenshot\.png\'\)\] {
+  background-image: url('../assets/screenshot.png');
+}
+
+.bg-cover {
+  background-size: cover;
+}
+
 .p-3 {
   padding: 0.75rem;
 }
 
 .p-2 {
   padding: 0.5rem;
-}
-
-.p-10 {
-  padding: 2.5rem;
-}
-
-.p-20 {
-  padding: 5rem;
-}
-
-.p-14 {
-  padding: 3.5rem;
 }
 
 .px-14 {
@@ -692,6 +715,16 @@ video {
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.px-96 {
+  padding-left: 24rem;
+  padding-right: 24rem;
 }
 
 .text-center {
