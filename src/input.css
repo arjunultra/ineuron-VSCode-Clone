@@ -19,3 +19,15 @@
   top: -0.7rem;
   right: 1.45rem;
 }
+.value-prop-icon.intellisense {
+  background-position: 0 0;
+}
+.value-prop-icon.debugging {
+  background-position: -5.2rem 0;
+}
+.value-prop-icon.git {
+  background-position: -10.2rem 0;
+}
+.value-prop-icon.extensions-icon {
+  background-position: -5rem -5.2rem;
+}
