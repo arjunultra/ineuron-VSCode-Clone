@@ -40,46 +40,54 @@
         </p>
       </section>
       <!-- Hero Section -->
-      <section class="hero-section bg-[#2c2c32] flex flex-col items-center">
-        <h2 class="text-white text-5xl font-light text-center mt-5">
-          Code editing. <span class="font-normal">Redefined</span>.
-        </h2>
-        <p class="text-[#ababad] mt-2">
-          Free. Built on open source. Runs everywhere.
-        </p>
-        <div class="btn-container flex mt-4">
-          <button class="bg-[#0066b8] text-white font-medium px-14">
-            Download for Windows
-            <small class="block text-[#e6eff6] font-extralight"
-              >Stable Build</small
+      <div class="hero-container md:flex">
+        <section class="hero-section bg-[#2c2c32] flex flex-col items-center">
+          <h2
+            class="text-white text-5xl font-light text-center max-w-xs mt-5 lg:max-w-xs"
+          >
+            Code editing. <span class="font-normal">Redefined</span>.
+          </h2>
+          <p class="text-[#ababad] mt-2">
+            Free. Built on open source. Runs everywhere.
+          </p>
+          <div class="btn-container flex mt-4">
+            <button class="bg-[#0066b8] text-white font-medium px-14">
+              Download for Windows
+              <small class="block text-[#e6eff6] font-extralight"
+                >Stable Build</small
+              >
+            </button>
+            <button
+              class="flex items-center justify-center bg-[#0066b8] w-12 h-[64px] p-2 ml-[1.5px] px-4"
             >
-          </button>
-          <button
-            class="flex items-center justify-center bg-[#0066b8] w-12 h-[64px] p-2 ml-[1.5px] px-4"
+              <i class="fa-sharp fa-solid fa-angle-down text-white"></i>
+            </button>
+          </div>
+          <p
+            class="editions bg-[#25252b] text-[#a8a8aa] rounded-md p-2 px-16 mt-4 text-xs"
           >
-            <i class="fa-sharp fa-solid fa-angle-down text-white"></i>
-          </button>
-        </div>
-        <p
-          class="editions bg-[#25252b] text-[#a8a8aa] rounded-md p-2 px-16 mt-4 text-xs"
+            <a class="text-[#0098ff]" href="#">Web</a>,
+            <a class="text-[#0098ff]" href="#">Insider's edition</a>,or
+            <a class="text-[#0098ff]" href="#">other platforms</a>
+          </p>
+          <p class="text-[#ababad] text-xs mt-4 mb-8 text-center">
+            By using VS Code, you agree to its
+            <a class="block text-[#0098ff]" href="#"
+              >license and privacy statement
+              <span class="text-[#ababad]">.</span></a
+            >
+          </p>
+        </section>
+        <!-- hero-img -->
+        <div
+          class="image-container px-[15px] min-h-[1px] relative pb-2 md:w-[617px]"
         >
-          <a class="text-[#0098ff]" href="#">Web</a>,
-          <a class="text-[#0098ff]" href="#">Insider's edition</a>,or
-          <a class="text-[#0098ff]" href="#">other platforms</a>
-        </p>
-        <p class="text-[#ababad] text-xs mt-4 mb-8 text-center">
-          By using VS Code, you agree to its
-          <a class="block text-[#0098ff]" href="#"
-            >license and privacy statement
-            <span class="text-[#ababad]">.</span></a
-          >
-        </p>
-      </section>
-      <div class="image-container px-[15px] min-h-[1px] relative pb-2">
-        <section
-          class="bg-hero-pattern bg-cover bg-no-repeat pb-[68.1%] w-full max-w-[617px] m-auto"
-        ></section>
+          <section
+            class="bg-hero-pattern bg-cover bg-no-repeat pb-[68.1%] w-full max-w-[617px] m-auto md:bg-[length:617px] md:bg-no-repeat"
+          ></section>
+        </div>
       </div>
+      <!-- hero-section ends -->
     </div>
     <!-- Features Section -->
     <section class="grid grid-cols-2 gap-x-6 text-center lg:grid-cols-4">
