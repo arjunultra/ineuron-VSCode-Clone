@@ -692,7 +692,7 @@ video {
 }
 
 .bg-hero-pattern {
-  background-image: url('../assets/screenshot.png');
+  background-image: url('../dist/assets/screenshot.png');
 }
 
 .bg-\[url\(\'\.\.\/assets\/valueprops-top-sprite\.svg\'\)\] {
@@ -898,6 +898,10 @@ video {
 @media (min-width: 768px) {
   .md\:flex {
     display: flex;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:w-\[617px\] {
