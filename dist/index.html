@@ -12,17 +12,19 @@
   </head>
   <body class="font-sans">
     <!-- Nav Bar -->
-    <nav class="p-3 h-[15%] w-screen flex items-center bg-[#2c2c32]">
+    <nav
+      class="p-3 h-[15%] w-screen flex items-center justify-around bg-[#2c2c32]"
+    >
       <img
-        class="h-6 w-6 mr-3"
+        class="h-6 w-6 ml-auto"
         src="../dist/assets/logo.png"
         alt="vs code logo"
       />
-      <h1 class="text-white text-lg">Visual Studio Code</h1>
-      <div class="nav-btn ml-auto p-2 md:hidden">
+      <span class="text-white text-lg mr-auto">Visual Studio Code</span>
+      <div class="nav-btn ml-auto p-2 lg:hidden">
         <img src="../dist/assets/navbtn-collapsed.png" alt="nav button" />
       </div>
-      <ul class="hidden">
+      <ul class="hidden lg:text-[#a8a8ac] lg:flex lg:space-x-6 lg:mr-auto">
         <li>Docs</li>
         <li>Updates</li>
         <li>Blog</li>
@@ -89,7 +91,7 @@
           class="image-container px-[15px] min-h-[1px] relative pb-2 md:w-[617px] md:mt-24"
         >
           <section
-            class="bg-hero-pattern bg-cover bg-no-repeat pb-[68.1%] w-full max-w-[617px] m-auto md:bg-[length:617px] md:bg-no-repeat"
+            class="bg-[url('../assets/screenshot.png')] bg-cover bg-no-repeat pb-[68.1%] w-full max-w-[617px] m-auto md:bg-[length:617px] md:bg-no-repeat"
           ></section>
         </div>
       </div>
@@ -139,18 +141,22 @@
         >
       </div>
     </section>
+    <!-- Review Section -->
     <section
-      class="bg-[#f5f5f5] flex justify-center items-center"
+      class="bg-[#f5f5f5] lg:flex lg:justify-center lg:items-center lg:flex-row flex-col"
       id="review-tweets"
     >
-      <div class="flex-1 flex pt-20 items-center justify-around">
+      <div>
+        <i class="fa-solid fa-chevron-left mx-10 text-xl"></i>
+      </div>
+      <div class="flexitem-1 pt-20 flex items-center justify-center">
         <img
           class="rounded-full h-20 w-20 block mr-10"
-          src="../assets/review1.jpg"
+          src="./assets/review1.jpg"
           alt="una"
         />
         <div class="flex flex-col max-w-md">
-          <h6>Una Kraverts</h6>
+          <h6 class="font-bold">Una Kraverts</h6>
           <small>@una</small>
           <p>
             VS @code does so many things right. I'm constantly impressed by the
@@ -159,6 +165,39 @@
           </p>
         </div>
       </div>
+      <div class="flex-2 flex pt-20 items-center justify-center">
+        <img
+          class="rounded-full h-20 w-20 block mr-10"
+          src="./assets/review-2.jpg"
+          alt="una"
+        />
+        <div class="flex flex-col max-w-md">
+          <h6 class="font-bold">Jonathan Dunlap</h6>
+          <small>@jadbox</small>
+          <p>
+            VS Code will have deep remote development. You can connect to a
+            container running a different OS and use any VS Code plugins,
+            linting, debugging for that environment. 🔥🔥🔥
+          </p>
+        </div>
+      </div>
+      <div class="flex-3 flex pt-20 items-center justify-center">
+        <img
+          class="rounded-full h-20 w-20 block mr-10"
+          src="./assets/review3.jpg"
+          alt="una"
+        />
+        <div class="flex flex-col max-w-md">
+          <h6 class="font-bold">Pavithra Kodmad</h6>
+          <small>@PKodmad</small>
+          <p>
+            VS @code does so many things right. I'm constantly impressed by the
+            UX, and customizing workspace / user preferences is no exception
+            🙌💯 . It just keeps getting better ❤
+          </p>
+        </div>
+      </div>
+      <div><i class="fa-solid fa-chevron-right text-xl mx-5"></i></div>
     </section>
   </body>
 </html>
