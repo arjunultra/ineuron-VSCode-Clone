@@ -34,6 +34,21 @@
         <li>Learn</li>
         <li>Search</li>
       </ul>
+      <!-- search and button -->
+      <img
+        class="hidden lg:inline-block w-6 mr-auto z-10"
+        src="./assets/search.svg"
+        alt="search-dark"
+      />
+      <input
+        class="hidden xl:block mr-auto absolute right-16 w-40 bg-[#3d3d42] p-3"
+        type="search"
+        name="search"
+        id=""
+      />
+      <button class="hidden xl:inline-block xl:bg-[#0066b8] xl:px-6">
+        <img src="./assets/download.svg" alt="download" />Download
+      </button>
     </nav>
     <!-- bg div whole container -->
     <div class="bg-whole-container bg-[#2c2c32]">
@@ -210,7 +225,9 @@
         alt="intellisense"
       />
       <div class="text-container max-w-3xl md:ml-auto ml-16">
-        <h2 class="text-4xl font-extralight mb-6">Meet IntelliSense.</h2>
+        <h2 class="text-2xl md:text-4xl font-extralight mb-6">
+          Meet IntelliSense.
+        </h2>
         <p class="text-xl leading-loose">
           Go beyond syntax highlighting and autocomplete with IntelliSense,
           which provides smart completions based on variable types, function
@@ -219,19 +236,23 @@
       </div>
     </section>
     <section
-      id="Debug-within"
-      class="p-10 pt-6 text-[#6d6e71] bg-[#f5f5f5] flex"
+      id="debug-within"
+      class="bg-[#f5f5f5] pt-16 md:p-20 md:flex md:flex-row-reverse md:items-start md:justify-around text-[#6d6e71] flex flex-col"
     >
-      <div class="text-container order-2">
-        <h2 class="text-4xl font-extralight mb-6 order-2">
+      <img
+        class="md:ml-auto mx-auto"
+        src="./assets/home-debug.svg"
+        alt="debugging"
+      />
+      <div class="text-container max-w-3xl md:ml-auto ml-16">
+        <h2 class="text-xl md:text-4xl font-extralight mb-6 max-w-[100vw]">
           Print statement debugging is a thing of the past.
         </h2>
-        <p class="text-xl leading-loose">
+        <p class="text-lg md:text-xl leading-loose">
           Debug code right from the editor. Launch or attach to your running
           apps and debug with break points, call stacks, and an interactive
           console.
         </p>
-        <img class="order-1" src="./assets/home-debug.svg" alt="intellisense" />
       </div>
     </section>
     <section
@@ -253,25 +274,28 @@
       </div>
     </section>
     <section
-      id="git-integrated"
-      class="pt-16 md:p-20 md:flex md:flex-row md:items-start md:justify-around text-[#6d6e71] flex flex-col"
+      id="debug-within"
+      class="bg-[#f5f5f5] pt-16 md:p-20 md:flex md:flex-row-reverse md:items-start md:justify-around text-[#6d6e71] flex flex-col"
     >
       <img
-        class="md:ml-auto mx-auto"
-        src="./assets/home-git.svg"
-        alt="intellisense"
+        class="md:ml-auto mx-auto w-80"
+        src="./assets/Hundreds-of-Extensions.png"
+        alt="debugging"
       />
-      <div class="text-container max-w-3xl md:ml-auto ml-16">
-        <h2 class="text-4xl font-extralight mb-6">Git commands built-in.</h2>
+      <div class="text-container md:ml-auto ml-16 mt-10">
+        <h2 class="max-w-[100vh] text-3xl md:text-4xl font-extralight mb-6">
+          Extensible and customizable.
+        </h2>
         <p class="text-xl leading-loose">
-          Working with Git and other SCM providers has never been easier. Review
-          diffs, stage files, and make commits right from the editor. Push and
-          pull from any hosted SCM service.
+          Want even more features? Install extensions to add new languages,
+          themes, debuggers, and to connect to additional services. Extensions
+          run in separate processes, ensuring they won't slow down your editor.
+          Learn more about extensions.
         </p>
       </div>
     </section>
     <section
-      id="ms-azure"
+      id="git-integrated"
       class="pt-16 md:p-20 md:flex md:flex-row md:items-start md:justify-around text-[#6d6e71] flex flex-col"
     >
       <img
