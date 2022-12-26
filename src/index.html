@@ -40,8 +40,10 @@
         </p>
       </section>
       <!-- Hero Section -->
-      <div class="hero-container md:flex">
-        <section class="hero-section bg-[#2c2c32] flex flex-col items-center">
+      <div class="hero-container md:flex md:items-center md:justify-around">
+        <section
+          class="hero-section bg-[#2c2c32] flex flex-col items-center md:justify-between"
+        >
           <h2
             class="text-white text-5xl font-light text-center max-w-xs mt-5 lg:max-w-xs"
           >
@@ -80,7 +82,7 @@
         </section>
         <!-- hero-img -->
         <div
-          class="image-container px-[15px] min-h-[1px] relative pb-2 md:w-[617px]"
+          class="image-container px-[15px] min-h-[1px] relative pb-2 md:w-[617px] md:mt-24"
         >
           <section
             class="bg-hero-pattern bg-cover bg-no-repeat pb-[68.1%] w-full max-w-[617px] m-auto md:bg-[length:617px] md:bg-no-repeat"
@@ -131,6 +133,27 @@
           ></div>
           Extensions</a
         >
+      </div>
+    </section>
+    <section
+      class="bg-[#f5f5f5] flex justify-center items-center"
+      id="review-tweets"
+    >
+      <div class="flex-1 flex pt-20 items-center justify-around">
+        <img
+          class="rounded-full h-20 w-20 block mr-10"
+          src="../assets/review1.jpg"
+          alt="una"
+        />
+        <div class="flex flex-col max-w-md">
+          <h6>Una Kraverts</h6>
+          <small>@una</small>
+          <p>
+            VS @code does so many things right. I'm constantly impressed by the
+            UX, and customizing workspace / user preferences is no exception
+            🙌💯 . It just keeps getting better ❤
+          </p>
+        </div>
       </div>
     </section>
   </body>
