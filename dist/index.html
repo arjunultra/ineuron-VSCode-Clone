@@ -15,16 +15,23 @@
     <nav
       class="p-3 h-[15%] w-screen flex items-center justify-around bg-[#2c2c32]"
     >
-      <img
-        class="h-6 w-6 ml-auto"
-        src="../dist/assets/logo.png"
-        alt="vs code logo"
-      />
-      <span class="text-white text-lg mr-auto">Visual Studio Code</span>
+      <div class="logo-container flex items-center justify-around ml-56">
+        <img
+          class="h-6 w-6 ml-auto mr-2"
+          src="../dist/assets/logo.png"
+          alt="vs code logo"
+        />
+        <span
+          class="text-[#fff8f2] font-myFont tracking-wider text-lg mr-auto font-medium"
+          >Visual Studio Code</span
+        >
+      </div>
       <div class="nav-btn ml-auto p-2 lg:hidden">
         <img src="../dist/assets/navbtn-collapsed.png" alt="nav button" />
       </div>
-      <ul class="hidden lg:text-[#a8a8ac] lg:flex lg:space-x-6 lg:mr-auto">
+      <ul
+        class="hidden lg:text-[#a8a8ac] lg:flex lg:items-center space-x-6 mr-auto ml-6"
+      >
         <li>Docs</li>
         <li>Updates</li>
         <li>Blog</li>
@@ -32,26 +39,32 @@
         <li>Extensions</li>
         <li>FAQ</li>
         <li>Learn</li>
-        <li>Search</li>
       </ul>
       <!-- search and button -->
-      <img
-        class="hidden lg:inline-block w-6 mr-auto z-10"
-        src="./assets/search.svg"
-        alt="search-dark"
-      />
-      <input
-        class="hidden xl:block mr-auto absolute right-16 w-40 bg-[#3d3d42] p-3"
-        type="search"
-        name="search"
-        id=""
-      />
-      <button class="hidden xl:inline-block xl:bg-[#0066b8] xl:px-6">
-        <img src="./assets/download.svg" alt="download" />Download
-      </button>
+      <form class="nav-search hidden xl:flex xl:relative xl:mr-auto">
+        <input
+          type="text"
+          name="navsearch"
+          id="nav-search"
+          placeholder="Search Docs"
+          class="lg:bg-[rgba(255,255,255,.08)] lg:p-[6px_15px_6px_40px] text-white"
+        />
+        <button
+          class="hidden lg:block lg:absolute lg:right-50 top-0 lg:px-4 lg:py-2 lg:outline-none lg:z-20"
+        >
+          <img class="h-10 w-5" src="./assets/search.svg" alt="search" />
+        </button>
+        <button class="p-2 bg-[#0064b5] flex items-center">
+          <img
+            class="h-5"
+            src="./assets/download.svg"
+            alt="download icon"
+          /><span class="font-sans p-2 text-white font-medium">Download</span>
+        </button>
+      </form>
     </nav>
     <!-- bg div whole container -->
-    <div class="bg-whole-container bg-[#2c2c32]">
+    <div class="bg-whole-container bg-[#2c2c32] w-screen">
       <!-- Notification Area -->
       <section class="bg-[#25252b] text-[#cccccc] text-center">
         <p class="p-2">
@@ -103,10 +116,10 @@
         </section>
         <!-- hero-img -->
         <div
-          class="image-container px-[15px] min-h-[1px] relative pb-2 md:w-[617px] md:mt-24"
+          class="image-container px-[15px] min-h-[1px] relative lg:mb-52 md:w-[617px] md:mt-24"
         >
           <section
-            class="bg-[url('../assets/screenshot.png')] bg-cover bg-no-repeat pb-[68.1%] w-full max-w-[617px] m-auto md:bg-[length:617px] md:bg-no-repeat"
+            class="bg-[url('../assets/screenshot.png')] bg-cover bg-no-repeat pb-[68.1%] w-full max-w-[617px] m-auto md:bg-[length:617px] md:bg-no-repeat lg:mt-28"
           ></section>
         </div>
       </div>

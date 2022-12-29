@@ -4,6 +4,9 @@ module.exports = {
   content: ["./dist/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        'myFont': ["Segoe UI","Helvetica Neue","Helvetica",'sans serif']
+      },
       backgroundImage: {
         'hero-pattern': "url('./dist/assets/screenshot.png')",
       },
