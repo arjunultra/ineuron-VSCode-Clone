@@ -12,25 +12,25 @@
   </head>
   <body class="font-sans">
     <!-- Nav Bar -->
-    <nav
-      class="p-3 h-[15%] w-screen flex items-center justify-around bg-[#2c2c32]"
-    >
-      <div class="logo-container flex items-center justify-around ml-56">
+    <nav class="p-3 h-[15%] w-screen flex justify-between bg-[#2c2c32]">
+      <div class="brand-container flex items-center justify-around">
         <img
-          class="h-6 w-6 ml-auto mr-2"
+          class="h-6 w-6 mr-2 md:ml-20"
           src="assets/logo.png"
           alt="vs code logo"
         />
         <span
-          class="text-[#fff8f2] font-myFont tracking-wider text-lg mr-auto font-medium"
+          class="text-[#fff8f2] font-myFont tracking-wider text-lg font-medium"
           >Visual Studio Code</span
         >
       </div>
-      <div class="nav-btn ml-auto p-2 lg:hidden">
-        <img src="assets/navbtn-collapsed.png" alt="nav button" />
-      </div>
+      <img
+        class="mr-5 h-6 md:hidden"
+        src="assets/navbtn-collapsed.png"
+        alt="nav button"
+      />
       <ul
-        class="hidden lg:text-[#a8a8ac] lg:flex lg:items-center space-x-6 mr-auto ml-6"
+        class="hidden md:flex md:text-[#a8a8ac] lg:text-[#a8a8ac] lg:flex lg:items-center space-x-6 mr-auto ml-6"
       >
         <li>Docs</li>
         <li>Updates</li>
@@ -116,10 +116,10 @@
         </section>
         <!-- hero-img -->
         <div
-          class="image-container px-[15px] min-h-[1px] relative lg:mb-52 md:w-[617px] md:mt-24"
+          class="image-container px-[15px] min-h-[1px] relative mr-5 pb-2 md:w-[617px] md:mt-24"
         >
           <section
-            class="bg-[url('../assets/screenshot.png')] bg-cover bg-no-repeat pb-[68.1%] w-full max-w-[617px] m-auto md:bg-[length:617px] md:bg-no-repeat lg:mt-28"
+            class="bg-[url('../assets/screenshot.png')] bg-cover bg-no-repeat pb-[68.1%] w-full max-w-[617px] m-auto md:bg-[length:617px]"
           ></section>
         </div>
       </div>
@@ -174,7 +174,7 @@
       class="bg-[#f5f5f5] lg:flex lg:justify-center lg:items-center lg:flex-row flex-col"
       id="review-tweets"
     >
-      <div>
+      <div class="hidden">
         <i class="fa-solid fa-chevron-left mx-10 text-xl"></i>
       </div>
       <div class="flexitem-1 pt-20 flex items-center justify-center">
@@ -225,7 +225,9 @@
           </p>
         </div>
       </div>
-      <div><i class="fa-solid fa-chevron-right text-xl mx-5"></i></div>
+      <div class="hidden">
+        <i class="fa-solid fa-chevron-right text-xl mx-5"></i>
+      </div>
     </section>
     <!-- Features-explaination -->
     <section
@@ -288,14 +290,14 @@
     </section>
     <section
       id="debug-within"
-      class="bg-[#f5f5f5] pt-16 md:p-20 md:flex md:flex-row-reverse md:items-start md:justify-around text-[#6d6e71] flex flex-col"
+      class="flex flex-col text-[#6d6e71] bg-[#f5f5f5] pt-16 md:p-20 md:flex md:flex-row-reverse md:items-start md:justify-around xl:items-center"
     >
       <img
-        class="md:ml-auto mx-auto w-80"
+        class="md:ml-auto mx-auto w-80 transform transition-transform duration-300 hover:scale-110"
         src="./assets/Hundreds-of-Extensions.png"
         alt="debugging"
       />
-      <div class="text-container md:ml-auto ml-16 mt-10">
+      <div class="text-container md:ml-auto ml-16 mt-10 xl:max-w-2xl">
         <h2 class="max-w-[100vh] text-3xl md:text-4xl font-extralight mb-6">
           Extensible and customizable.
         </h2>
@@ -327,6 +329,12 @@
           ease, all from within VS Code.
         </p>
       </div>
+    </section>
+    <!-- VS Code For -->
+    <section class="bg-[#f5f5f5]">
+      <h2 class="text-[#413b3b] text-[18.7px] text-center mb-[40px]">
+        VS Code for
+      </h2>
     </section>
   </body>
 </html>
