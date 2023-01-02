@@ -170,9 +170,9 @@
       </div>
     </section>
     <!-- Review Section -->
-    <div class="section-container">
+    <div class="section-container flex items-start">
       <section
-        class="flex flex-col items-center justify-evenly bg-[#f5f5f5] lg:flex lg:justify-center lg:items-center lg:flex-row"
+        class="flex flex-col items-start justify-evenly bg-[#f5f5f5] lg:flex lg:justify-center lg:items-center lg:flex-row"
         id="review-tweets"
       >
         <div class="hidden lg:block">
@@ -180,11 +180,11 @@
         </div>
         <div class="flex items-center justify-center">
           <img
-            class="rounded-full h-20 w-20 mr-10 ml-10 block"
+            class="rounded-full h-20 w-20 mx-10 block"
             src="./assets/review1.jpg"
             alt="una"
           />
-          <div class="flex flex-col max-w-md">
+          <div class="flex flex-col max-w-md mt-16">
             <h6 class="font-bold">Una Kraverts</h6>
             <small>@una</small>
             <p class="text-[#444444]">
@@ -194,16 +194,16 @@
             </p>
           </div>
         </div>
-        <div class="flex-2 flex pt-20 items-center justify-center relative">
+        <div class="flex-2 flex items-center justify-center relative">
           <i
             class="fa-solid fa-chevron-left text-xl absolute -left-[20px] text-slate-500 md:hidden"
           ></i>
           <img
-            class="rounded-full h-20 w-20 block mr-10 ml-10"
+            class="rounded-full h-20 w-20 block mx-10"
             src="./assets/review-2.jpg"
             alt="jonathan"
           />
-          <div class="flex flex-col max-w-md">
+          <div class="flex flex-col max-w-md mt-16">
             <h6 class="font-bold">Jonathan Dunlap</h6>
             <small>@jadbox</small>
             <p>
@@ -216,13 +216,13 @@
             ></i>
           </div>
         </div>
-        <div class="flex-3 flex pt-20 items-center justify-center">
+        <div class="flex-3 flex items-center justify-center">
           <img
-            class="rounded-full h-20 w-20 block mr-10 ml-10"
+            class="rounded-full h-20 w-20 block mx-10"
             src="./assets/review3.jpg"
             alt="pavi"
           />
-          <div class="flex flex-col max-w-md">
+          <div class="flex flex-col max-w-md mt-16">
             <h6 class="font-bold">Pavithra Kodmad</h6>
             <small>@PKodmad</small>
             <p>
@@ -336,11 +336,13 @@
     </section>
     <!-- VS Code For -->
     <section class="bg-[#f5f5f5]">
-      <h2 class="text-[#413b3b] text-[18.7px] text-center mb-[40px] pt-[40px]">
+      <h2
+        class="text-[#413b3b] text-[18.7px] text-center mb-[40px] pt-[40px] xl:text-3xl xl:font-light"
+      >
         VS Code for
       </h2>
       <div
-        class="grid-container p-10 grid grid-cols-2 gap-x-20 gap-y-3 md:grid-cols-4 md:grid-rows-3"
+        class="grid-container pt-0 grid grid-cols-2 gap-x-20 md:grid-cols-4 md:grid-rows-3 xl:grid-rows-2 xl:grid-cols-6 xl:px-64"
       >
         <div class="flex mb-[10px]">
           <img
@@ -409,18 +411,35 @@
         </div>
       </div>
       <!-- grid ends -->
-      <p>
-        <a class="pl-20 text-[15.3px] min-w-[200px] text-[#0071bc]" href="#"
+      <p class="text-center font-medium">
+        <a
+          class="pl-20 text-[15.3px] min-w-[200px] font-medium text-[#0071bc] lg:text-[1.1rem]"
+          href="#"
           >and many more languages on the Marketplace...</a
         >
       </p>
       <!-- call-to- action button -->
-      <div class="link-btn flex items-center justify-center">
+      <div class="link-btn flex items-center justify-center pb-20">
         <button
-          class="px-10 py-5 my-14 bg-[#0066b8] hover:bg-[#005ba4] text-white font-bold"
+          class="mt-10 px-16 py-4 bg-[#0066b8] hover:bg-[#005ba4] text-white font-bold"
         >
-          <a href="#">Get Started Now</a>
+          <a class="text-center" href="#">Get Started Now</a>
         </button>
+      </div>
+    </section>
+    <!-- operating system -->
+    <section id="operating-system">
+      <div class="win-container flex flex-col items-center justify-center">
+        <img
+          class="w-[100px] h-[100px]"
+          src="./assets/windows-logo.png"
+          alt="win logo"
+        />
+        <button class="bg-[#0066b8] text-white px-20 py-3 my-5">
+          Windows <br />
+          <small>Windows 8,10,11</small>
+        </button>
+        <!--Links grid container -->
       </div>
     </section>
   </body>
