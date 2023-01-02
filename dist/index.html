@@ -170,65 +170,73 @@
       </div>
     </section>
     <!-- Review Section -->
-    <section
-      class="bg-[#f5f5f5] lg:flex lg:justify-center lg:items-center lg:flex-row flex-col"
-      id="review-tweets"
-    >
-      <div class="hidden">
-        <i class="fa-solid fa-chevron-left mx-10 text-xl"></i>
-      </div>
-      <div class="flexitem-1 pt-20 flex items-center justify-center">
-        <img
-          class="rounded-full h-20 w-20 block mr-10"
-          src="./assets/review1.jpg"
-          alt="una"
-        />
-        <div class="flex flex-col max-w-md">
-          <h6 class="font-bold">Una Kraverts</h6>
-          <small>@una</small>
-          <p>
-            VS @code does so many things right. I'm constantly impressed by the
-            UX, and customizing workspace / user preferences is no exception
-            🙌💯 . It just keeps getting better ❤
-          </p>
+    <div class="section-container pl-20 pr-10">
+      <section
+        class="bg-[#f5f5f5] lg:flex lg:justify-center lg:items-center lg:flex-row flex-col"
+        id="review-tweets"
+      >
+        <div class="hidden lg:block">
+          <i class="fa-solid fa-chevron-left mx-10 text-xl"></i>
         </div>
-      </div>
-      <div class="flex-2 flex pt-20 items-center justify-center">
-        <img
-          class="rounded-full h-20 w-20 block mr-10"
-          src="./assets/review-2.jpg"
-          alt="una"
-        />
-        <div class="flex flex-col max-w-md">
-          <h6 class="font-bold">Jonathan Dunlap</h6>
-          <small>@jadbox</small>
-          <p>
-            VS Code will have deep remote development. You can connect to a
-            container running a different OS and use any VS Code plugins,
-            linting, debugging for that environment. 🔥🔥🔥
-          </p>
+        <div class="flexitem-1 pt-20 flex items-center justify-center">
+          <img
+            class="rounded-full h-20 w-20 block mr-10"
+            src="./assets/review1.jpg"
+            alt="una"
+          />
+          <div class="flex flex-col max-w-md">
+            <h6 class="font-bold">Una Kraverts</h6>
+            <small>@una</small>
+            <p>
+              VS @code does so many things right. I'm constantly impressed by
+              the UX, and customizing workspace / user preferences is no
+              exception 🙌💯 . It just keeps getting better ❤
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="flex-3 flex pt-20 items-center justify-center">
-        <img
-          class="rounded-full h-20 w-20 block mr-10"
-          src="./assets/review3.jpg"
-          alt="una"
-        />
-        <div class="flex flex-col max-w-md">
-          <h6 class="font-bold">Pavithra Kodmad</h6>
-          <small>@PKodmad</small>
-          <p>
-            VS @code does so many things right. I'm constantly impressed by the
-            UX, and customizing workspace / user preferences is no exception
-            🙌💯 . It just keeps getting better ❤
-          </p>
+        <div class="flex-2 flex pt-20 items-center justify-center relative">
+          <i
+            class="fa-solid fa-chevron-left text-xl absolute -left-[20px] text-slate-500 md:hidden"
+          ></i>
+          <img
+            class="rounded-full h-20 w-20 block mr-10"
+            src="./assets/review-2.jpg"
+            alt="jonathan"
+          />
+          <div class="flex flex-col max-w-md">
+            <h6 class="font-bold">Jonathan Dunlap</h6>
+            <small>@jadbox</small>
+            <p>
+              VS Code will have deep remote development. You can connect to a
+              container running a different OS and use any VS Code plugins,
+              linting, debugging for that environment. 🔥🔥🔥
+            </p>
+            <i
+              class="fa-solid fa-chevron-right text-xl absolute -right-[20px] top-[160px] text-slate-500 md:hidden"
+            ></i>
+          </div>
         </div>
-      </div>
-      <div class="hidden">
-        <i class="fa-solid fa-chevron-right text-xl mx-5"></i>
-      </div>
-    </section>
+        <div class="flex-3 flex pt-20 items-center justify-center">
+          <img
+            class="rounded-full h-20 w-20 block mr-10"
+            src="./assets/review3.jpg"
+            alt="pavi"
+          />
+          <div class="flex flex-col max-w-md">
+            <h6 class="font-bold">Pavithra Kodmad</h6>
+            <small>@PKodmad</small>
+            <p>
+              VS @code does so many things right. I'm constantly impressed by
+              the UX, and customizing workspace / user preferences is no
+              exception 🙌💯 . It just keeps getting better ❤
+            </p>
+          </div>
+        </div>
+        <div class="hidden lg:block">
+          <i class="fa-solid fa-chevron-right text-xl mx-5"></i>
+        </div>
+      </section>
+    </div>
     <!-- Features-explaination -->
     <section
       id="intellisense"
@@ -274,11 +282,7 @@
       id="git-integrated"
       class="pt-16 md:p-20 md:flex md:flex-row md:items-start md:justify-around text-[#6d6e71] flex flex-col"
     >
-      <img
-        class="md:ml-auto mx-auto"
-        src="./assets/home-git.svg"
-        alt="intellisense"
-      />
+      <img class="md:ml-auto mx-auto" src="./assets/home-git.svg" alt="git" />
       <div class="text-container max-w-3xl md:ml-auto ml-16">
         <h2 class="text-4xl font-extralight mb-6">Git commands built-in.</h2>
         <p class="text-xl leading-loose">
@@ -295,7 +299,7 @@
       <img
         class="md:ml-auto mx-auto w-80 transform transition-transform duration-300 hover:scale-110"
         src="./assets/Hundreds-of-Extensions.png"
-        alt="debugging"
+        alt="extensions"
       />
       <div class="text-container md:ml-auto ml-16 mt-10 xl:max-w-2xl">
         <h2 class="max-w-[100vh] text-3xl md:text-4xl font-extralight mb-6">
@@ -316,7 +320,7 @@
       <img
         class="md:ml-auto mx-auto"
         src="./assets/home-azure.svg"
-        alt="intellisense"
+        alt="cloud"
       />
       <div class="text-container max-w-3xl md:ml-auto ml-16">
         <h2 class="text-4xl font-extralight mb-6">
@@ -332,9 +336,92 @@
     </section>
     <!-- VS Code For -->
     <section class="bg-[#f5f5f5]">
-      <h2 class="text-[#413b3b] text-[18.7px] text-center mb-[40px]">
+      <h2 class="text-[#413b3b] text-[18.7px] text-center mb-[40px] pt-[40px]">
         VS Code for
       </h2>
+      <div
+        class="grid-container p-10 grid grid-cols-2 gap-x-20 gap-y-3 md:grid-cols-4 md:grid-rows-3"
+      >
+        <div class="flex mb-[10px]">
+          <img
+            class="h-[30px] w-[30px]"
+            src="./assets/javascript.svg"
+            alt="JS"
+          />
+          <p class="text-[15.3px] text-[#444444]">JavaScript</p>
+        </div>
+        <div class="flex mb-[10px]">
+          <img class="h-[30px] w-[30px]" src="./assets/python.svg" alt="py" />
+          <p class="text-[15.3px] text-[#444444]">Python</p>
+        </div>
+        <div class="flex mb-[10px]">
+          <img class="h-[30px] w-[30px]" src="./assets/java.svg" alt="TS" />
+          <p class="text-[15.3px] text-[#444444]">Java</p>
+        </div>
+        <div class="flex mb-[10px]">
+          <img class="h-[30px] w-[30px]" src="./assets/markdown.svg" alt="md" />
+          <p class="text-[15.3px] text-[#444444]">Markdown</p>
+        </div>
+        <div class="flex mb-[10px]">
+          <img
+            class="h-[30px] w-[30px]"
+            src="./assets/typescript.svg"
+            alt="TS"
+          />
+          <p class="text-[15.3px] text-[#444444]">TypeScript</p>
+        </div>
+        <div class="flex mb-[10px]">
+          <img class="h-[30px] w-[30px]" src="./assets/cpp.svg" alt="C&C++" />
+          <p class="text-[15.3px] text-[#444444]">C/C++</p>
+        </div>
+        <!-- 2nd column -->
+        <div class="flex mb-[10px]">
+          <img class="h-[30px] w-[30px]" src="./assets/json.svg" alt="JSON" />
+          <p class="text-[15.3px] text-[#444444]">JSON</p>
+        </div>
+        <div class="flex mb-[10px]">
+          <img
+            class="h-[30px] w-[30px]"
+            src="./assets/powershell.svg"
+            alt="shell"
+          />
+          <p class="text-[15.3px] text-[#444444]">Powershell</p>
+        </div>
+        <div class="flex mb-[10px]">
+          <img
+            class="h-[30px] w-[30px]"
+            src="./assets/html.svg"
+            alt="html/css"
+          />
+          <p class="text-[15.3px] text-[#444444]">HTML/CSS</p>
+        </div>
+        <div class="flex mb-[10px]">
+          <img class="h-[30px] w-[30px]" src="./assets/csharp.svg" alt="C#" />
+          <p class="text-[15.3px] text-[#444444]">C#</p>
+        </div>
+        <div class="flex mb-[10px]">
+          <img class="h-[30px] w-[30px]" src="./assets/php.svg" alt="PHP" />
+          <p class="text-[15.3px] text-[#444444]">PHP</p>
+        </div>
+        <div class="flex mb-[10px]">
+          <img class="h-[30px] w-[30px]" src="./assets/yaml.svg" alt="yaml" />
+          <p class="text-[15.3px] text-[#444444]">YAML</p>
+        </div>
+      </div>
+      <!-- grid ends -->
+      <p>
+        <a class="pl-20 text-[15.3px] min-w-[200px] text-[#0071bc]" href="#"
+          >and many more languages on the Marketplace...</a
+        >
+      </p>
+      <!-- call-to- action button -->
+      <div class="link-btn flex items-center justify-center">
+        <button
+          class="px-10 py-5 my-14 bg-[#0066b8] hover:bg-[#005ba4] text-white font-bold"
+        >
+          <a href="#">Get Started Now</a>
+        </button>
+      </div>
     </section>
   </body>
 </html>
