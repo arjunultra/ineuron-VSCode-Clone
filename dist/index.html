@@ -427,26 +427,10 @@
         </button>
       </div>
     </section>
-    <!-- operating system -->
-    <section id="operating-system">
-      <div class="win-container flex flex-col items-center justify-center">
-        <img
-          class="w-[100px] h-[100px]"
-          src="./assets/windows-logo.png"
-          alt="win logo"
-        />
-        <button class="bg-[#0066b8] text-white px-20 py-3 my-5">
-          Windows <br />
-          <small>Windows 8,10,11</small>
-        </button>
-        <!--Links grid container -->
-      </div>
-    </section>
     <!-- Operating systems & Versions -->
-    <section class="flex">
-      <div
-        class="win-container flex flex-col items-center justify-center p-3 mx-20"
-      >
+    <section class="flex flex-col md:flex-row md:items-center md:justify-start">
+      <!-- windows -->
+      <div class="win-container flex flex-col items-center p-3 mx-20">
         <div class="image-container h-[100px] w-[100px]">
           <img class="w-full" src="./assets/windows-logo.png" alt="win logo" />
         </div>
@@ -464,6 +448,37 @@
           <small class="block">Windows 8, 10, 11</small>
         </button>
       </div>
+      <!-- windows ends -->
+      <!-- linux starts -->
+      <!-- Write code here 
+      
+      /*/*/*/*/*/*/*/*/*/*/*/*/
+      -->
+      <!-- linux ends -->
+      <!-- mac starts -->
+      <div class="apple-container flex flex-col items-center">
+        <div class="image-container h-[100px] w-[100px] mb-5 md:mb-0">
+          <img
+            class="w-full h-[100px]"
+            src="./assets/apple-logo.svg"
+            alt="apple-logo"
+          />
+        </div>
+        <button
+          class="bg-[#0066b8] hover:bg-[#005ba4] flex flex-col items-center justify-center text-white px-20 py-3 mb-[5px] md:mt-[20px]"
+        >
+          <div class="img-container flex">
+            <img
+              class="w-[18px] h-[18px] mr-3"
+              src="./assets/download.svg"
+              alt="download"
+            />
+            <span class="">Mac</span>
+          </div>
+          <small class="block">macOS 10.11+</small>
+        </button>
+      </div>
+      <!-- Mac-ends -->
     </section>
   </body>
 </html>
