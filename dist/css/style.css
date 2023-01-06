@@ -1354,6 +1354,10 @@ video {
     flex-direction: row-reverse;
   }
 
+  .md\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
   .md\:items-start {
     align-items: flex-start;
   }
@@ -1427,12 +1431,32 @@ video {
     flex-direction: row;
   }
 
+  .lg\:flex-wrap {
+    flex-wrap: wrap;
+  }
+
+  .lg\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
   .lg\:items-center {
     align-items: center;
   }
 
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:self-center {
+    align-self: center;
+  }
+
+  .lg\:justify-self-center {
+    justify-self: center;
   }
 
   .lg\:bg-\[rgba\(255\2c 255\2c 255\2c \.08\)\] {
