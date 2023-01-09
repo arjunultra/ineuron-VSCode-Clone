@@ -429,7 +429,7 @@
     </section>
     <!-- Operating systems & Versions -->
     <section
-      class="flex flex-col md:flex-row md:items-center md:justify-start md:flex-wrap lg:flex-nowrap lg:items-center lg:justify-center"
+      class="flex flex-col mb-20 md:flex-row md:items-center md:justify-start md:flex-wrap lg:flex-nowrap lg:items-center lg:justify-center"
     >
       <!-- windows -->
       <div
@@ -451,6 +451,42 @@
           </div>
           <small class="block">Windows 8, 10, 11</small>
         </button>
+        <!-- links table -->
+        <div class="flex-container flex items-start justify-evenly mt-5">
+          <!-- LHS -->
+          <div class="text-[#444444] font-[600] text-center">
+            <p>User Installer</p>
+            <p>System Installer</p>
+            <p>.zip</p>
+            <p>CLI</p>
+          </div>
+          <!-- RHS -->
+          <div class="ml-4 text-center mt-1">
+            <ul class="flex text-white text-[12px] items-start">
+              <li>
+                <a
+                  class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                  href="#"
+                  >x64</a
+                >
+              </li>
+              <li>
+                <a
+                  class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                  href="#"
+                  >x86</a
+                >
+              </li>
+              <li>
+                <a
+                  class="rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                  href="#"
+                  >arm64</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <!-- windows ends -->
       <!-- linux starts -->
@@ -496,7 +532,7 @@
           />
         </div>
         <button
-          class="bg-[#0066b8] hover:bg-[#005ba4] flex flex-col items-center justify-center text-white px-20 py-4 mb-[5px] md:mt-[20px] lg:ml-3"
+          class="bg-[#0066b8] hover:bg-[#005ba4] flex flex-col items-center justify-center text-white px-20 py-4 mb-[5px] mt-5"
         >
           <div class="img-container flex">
             <img
@@ -511,6 +547,5 @@
       </div>
       <!-- Mac-ends -->
     </section>
-    <!-- table -->
   </body>
 </html>
