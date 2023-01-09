@@ -335,7 +335,7 @@
       </div>
     </section>
     <!-- VS Code For -->
-    <section class="bg-[#f5f5f5]">
+    <section class="bg-[#f5f5f5] px-4">
       <h2
         class="text-[#413b3b] text-[18.7px] text-center mb-[40px] pt-[40px] xl:text-3xl xl:font-light"
       >
@@ -429,15 +429,17 @@
     </section>
     <!-- Operating systems & Versions -->
     <section
-      class="flex flex-col md:flex-row md:items-center md:justify-start md:flex-wrap lg:flex-nowrap"
+      class="flex flex-col md:flex-row md:items-center md:justify-start md:flex-wrap lg:flex-nowrap lg:items-center lg:justify-center"
     >
       <!-- windows -->
-      <div class="win-container flex flex-col items-center p-3 mx-20">
+      <div
+        class="win-container flex flex-col items-center p-3 mx-20 lg:mx-0 lg:px-[25px] lg:py-0"
+      >
         <div class="image-container h-[100px] w-[100px]">
           <img class="w-full" src="./assets/windows-logo.png" alt="win logo" />
         </div>
         <button
-          class="bg-[#0066b8] hover:bg-[#005ba4] flex flex-col items-center justify-center text-white px-20 py-3 mt-[20px] mb-[5px]"
+          class="bg-[#0066b8] hover:bg-[#005ba4] flex flex-col items-center justify-center text-white px-20 py-4 mt-[20px] mb-[5px]"
         >
           <div class="img-container flex">
             <img
@@ -453,11 +455,13 @@
       <!-- windows ends -->
       <!-- linux starts -->
 
-      <div class="linux-container flex flex-col items-center p-3 mx-20">
+      <div
+        class="linux-container flex flex-col items-center p-3 mx-20 lg:mx-0 lg:px-[25px] lg:py-0"
+      >
         <div class="image-container h-[100px] w-[100px]">
           <img class="w-full" src="./assets/linux-logo.png" alt="linux logo" />
         </div>
-        <div class="btn-container flex gap-[5px] min-w-[350px]">
+        <div class="btn-container gap-[5px] flex">
           <button
             class="bg-[#0066b8] hover:bg-[#005ba4] flex flex-col items-center justify-center text-white px-10 py-3 mt-[20px] mb-[5px]"
           >
@@ -481,7 +485,9 @@
       </div>
       <!-- linux ends -->
       <!-- mac starts -->
-      <div class="apple-container flex flex-col items-center">
+      <div
+        class="apple-container flex flex-col items-center lg:px-[25px] lg:py-0"
+      >
         <div class="image-container h-[100px] w-[100px] mb-5 md:mb-0">
           <img
             class="w-full h-[100px]"
@@ -490,7 +496,7 @@
           />
         </div>
         <button
-          class="bg-[#0066b8] hover:bg-[#005ba4] flex flex-col items-center justify-center text-white px-20 py-3 mb-[5px] md:mt-[20px]"
+          class="bg-[#0066b8] hover:bg-[#005ba4] flex flex-col items-center justify-center text-white px-20 py-4 mb-[5px] md:mt-[20px] lg:ml-3"
         >
           <div class="img-container flex">
             <img
@@ -505,5 +511,6 @@
       </div>
       <!-- Mac-ends -->
     </section>
+    <!-- table -->
   </body>
 </html>
