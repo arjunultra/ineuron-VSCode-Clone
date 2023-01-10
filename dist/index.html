@@ -429,7 +429,7 @@
     </section>
     <!-- Operating systems & Versions -->
     <section
-      class="flex flex-col mb-20 md:flex-row md:items-center md:justify-start md:flex-wrap lg:flex-nowrap lg:items-center lg:justify-center"
+      class="flex flex-col mb-20 md:flex-row md:items-center md:justify-start md:flex-wrap lg:flex-wrap lg:justify-center lg:items-baseline"
     >
       <!-- windows -->
       <div
@@ -452,7 +452,9 @@
           <small class="block">Windows 8, 10, 11</small>
         </button>
         <!-- links table -->
-        <div class="flex-container flex items-start justify-evenly mt-5">
+        <div
+          class="flex-container flex items-baseline justify-evenly justify-items-end mt-5"
+        >
           <!-- LHS -->
           <div class="text-[#444444] font-[600] text-center">
             <p>User Installer</p>
@@ -461,30 +463,107 @@
             <p>CLI</p>
           </div>
           <!-- RHS -->
-          <div class="ml-4 text-center mt-1">
-            <ul class="flex text-white text-[12px] items-start">
-              <li>
-                <a
-                  class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
-                  href="#"
-                  >x64</a
-                >
-              </li>
-              <li>
-                <a
-                  class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
-                  href="#"
-                  >x86</a
-                >
-              </li>
-              <li>
-                <a
-                  class="rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
-                  href="#"
-                  >arm64</a
-                >
-              </li>
-            </ul>
+          <div class="ml-4 text-center flex flex-col gap-1">
+            <div class="row-1">
+              <ul class="flex text-white text-[12px] items-start">
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >x64</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >x86</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >arm64</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="row-2 mt-0.5">
+              <ul class="flex text-white text-[12px] items-start">
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >x64</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >x86</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >arm64</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="row-3 mt-0.5">
+              <ul class="flex text-white text-[12px] items-start">
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >x64</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >x86</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >arm64</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="row-4 mt-0.5">
+              <ul class="flex text-white text-[12px] items-start">
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >x64</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >x86</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >arm64</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -518,6 +597,146 @@
             <small class="block mt-[7.125px]">Red Hat,Fedora,SUSE</small>
           </button>
         </div>
+        <div
+          class="flex-container flex items-baseline justify-evenly justify-items-end mt-5"
+        >
+          <!-- LHS -->
+          <div class="text-[#444444] font-[600] text-center">
+            <p>.deb</p>
+            <p>.rpm</p>
+            <p>.tar.gz</p>
+            <p>Snap</p>
+            <p>CLI</p>
+          </div>
+          <!-- RHS -->
+          <div class="ml-4 text-center flex flex-col gap-1">
+            <div class="row-1">
+              <ul class="flex text-white text-[12px] items-start">
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >x64</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >arm32</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >arm64</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="row-2 mt-0.5">
+              <ul class="flex text-white text-[12px] items-start">
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >x64</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >arm32</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >arm64</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="row-3 mt-0.5">
+              <ul class="flex text-white text-[12px] items-start">
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >x64</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >arm32</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >arm64</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="row-4 mt-0.5">
+              <ul class="flex text-white text-[12px] items-start">
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >x64</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >arm32</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >arm64</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="row-4 mt-0.5">
+              <ul class="flex text-white text-[12px] items-start">
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >x64</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >arm32</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >arm64</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- linux ends -->
       <!-- mac starts -->
@@ -544,6 +763,64 @@
           </div>
           <small class="block">macOS 10.11+</small>
         </button>
+        <!-- links table -->
+        <div
+          class="flex-container flex items-baseline justify-evenly justify-items-end mt-5"
+        >
+          <!-- LHS -->
+          <div class="text-[#444444] font-[600] text-center">
+            <p>.zip</p>
+            <p>CLI</p>
+          </div>
+          <!-- RHS -->
+          <div class="ml-4 text-center flex flex-col gap-1">
+            <div class="row-1">
+              <ul class="flex text-white text-[12px] items-start">
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >Intel chip</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >Apple silicon</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >Universal</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="row-2 mt-0.5">
+              <ul class="flex text-white text-[12px] items-start">
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >Intel chip</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mr-[3.8px] rounded-sm px-[2px] inline-block bg-[#0064b5] whitespace-nowrap"
+                    href="#"
+                    >Apple silicon</a
+                  >
+                </li>
+              </ul>
+            </div>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
       <!-- Mac-ends -->
     </section>
