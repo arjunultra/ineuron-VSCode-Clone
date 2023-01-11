@@ -41,3 +41,17 @@
 .myfont {
   font-family: "My Custom Font", "sans-serif";
 }
+.count {
+  position: relative;
+}
+.count::after {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+  transform: rotate(-45deg);
+  border-width: 4px 4px 4px 0;
+  background: #fafafa;
+  position: absolute;
+  left: -4px;
+}
