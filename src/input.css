@@ -54,4 +54,6 @@
   background: #fafafa;
   position: absolute;
   left: -4px;
+  border-style: solid;
+  border-color: transparent;
 }

@@ -1386,9 +1386,12 @@ video {
   height: 0.5rem;
   display: block;
   transform: rotate(-45deg);
+  border-width: 4px 4px 4px 0;
   background: #fafafa;
   position: absolute;
   left: -4px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .hover\:w-\[100\%\]:hover {
@@ -1441,8 +1444,34 @@ video {
   color: rgb(167 139 250 / var(--tw-text-opacity));
 }
 
+.hover\:text-red-500:hover {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#0064b5\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(0 100 181 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#2f86ce\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(47 134 206 / var(--tw-text-opacity));
+}
+
+.hover\:text-\[\#3899e9\]:hover {
+  --tw-text-opacity: 1;
+  color: rgb(56 153 233 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+@media (min-width: 640px) {
+  .sm\:flex {
+    display: flex;
+  }
 }
 
 @media (min-width: 768px) {
