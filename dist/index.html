@@ -74,7 +74,9 @@
         </p>
       </section>
       <!-- Hero Section -->
-      <div class="hero-container md:flex md:items-center md:justify-around">
+      <div
+        class="hero-container md:flex md:items-center md:justify-around xl:justify-center"
+      >
         <section
           class="hero-section bg-[#2c2c32] flex flex-col items-center md:justify-between"
         >
@@ -116,7 +118,7 @@
         </section>
         <!-- hero-img -->
         <div
-          class="image-container px-[15px] min-h-[1px] relative mr-5 pb-2 md:w-[617px] md:mt-24"
+          class="image-container px-[15px] min-h-[1px] relative mr-5 pb-2 md:w-[617px] md:mt-24 xl:ml-20"
         >
           <section
             class="bg-[url('../assets/screenshot.png')] bg-cover bg-no-repeat pb-[68.1%] w-full max-w-[617px] m-auto md:bg-[length:617px]"
@@ -881,38 +883,49 @@
       </div>
     </section>
     <!-- footer -->
-    <footer class="bg-[#333333] w-full h-44">
-      <div>
-        <p class="text-white">
-          Hello from
-          <a
-            class="hover:text-red-500"
-            target="_blank"
-            href="https://www.linkedin.com/in/arjun-arasu-aa953b105/"
-            >Arjun👋</a
-          >
-        </p>
-      </div>
+    <footer
+      class="bg-[#333333] w-full h-44 lg:flex lg:justify-between xl:flex xl:justify-around"
+    >
       <div
         class="p-10 pl-20 flex items-center justify-start gap-2 text-[#444444] font-semibold"
       >
-        <a class="text-white hover:text-violet-400 font-light" href="#"
-          >Follow @code</a
-        >
-        <div
-          class="bg-[#fafafa] px-1 flex items-center justify-evenly max-w-[55px] rounded-sm"
-        >
-          <img class="w-4 h-4" src="./assets/github.svg" alt="git" />
-          <span class="text-[13px]">Star</span>
+        <div class="hidden md:block" id="greeting">
+          <p class="text-white font-light mr-4">
+            Hello from
+            <a
+              class="hover:text-red-500 font-medium"
+              target="_blank"
+              href="https://www.linkedin.com/in/arjun-arasu-aa953b105/"
+              >Arjun👋</a
+            >
+          </p>
         </div>
-        <div
-          class="count bg-[#fafafa] px-1 flex items-center justify-evenly max-w-[55px] rounded-sm"
-        >
-          <span class="text-[13px]">141,191</span>
+        <div class="handle">
+          <a class="text-white hover:text-violet-400 font-light" href="#"
+            >Follow @code</a
+          >
+        </div>
+        <div class="btn-container flex gap-2">
+          <div
+            class="bg-[#fafafa] px-1 flex items-center justify-evenly max-w-[55px] rounded-sm"
+          >
+            <img class="w-4 h-4" src="./assets/github.svg" alt="git" />
+            <span class="text-[13px]">Star</span>
+          </div>
+          <div
+            class="count bg-[#fafafa] px-1 flex items-center justify-evenly max-w-[55px] rounded-sm"
+          >
+            <span class="text-[13px]">141,191</span>
+          </div>
         </div>
       </div>
-      <nav id="bottom-nav" class="flex items-center justify-evenly">
-        <a class="text-xs text-white hover:text-violet-400" href="#">Support</a>
+      <nav
+        id="bottom-nav"
+        class="flex items-center justify-evenly md:justify-start md:gap-x-4"
+      >
+        <a class="md:ml-20 text-xs text-white hover:text-violet-400" href="#"
+          >Support</a
+        >
         <a class="text-xs text-white hover:text-violet-400" href="#">Privacy</a>
         <a class="text-xs text-white hover:text-violet-400" href="#"
           >Terms of Use</a
